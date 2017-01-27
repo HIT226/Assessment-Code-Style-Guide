@@ -28,7 +28,7 @@ Whenever possible, avoid superfluous parent elements when writing HTML. Many tim
 ```
 
 ### Tables
-Make use of <thead>, <tfoot>, <tbody>, and <th> tags (and scope attribute) when appropriate.
+Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attribute) when appropriate.
 
 ```html
 <table summary="This is a chart of invoices for 2011.">
