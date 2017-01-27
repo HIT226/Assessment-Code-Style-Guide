@@ -18,6 +18,7 @@ These guidelines are mostly based upon [GitHub's code guidelines](http://primerc
 Whenever possible, avoid superfluous parent elements when writing HTML. Many times this requires iteration and refactoring, but produces less HTML. For example:
 
 ```html
+
 <!-- Not so great -->
 <span class="avatar">
   <img src="...">
@@ -25,12 +26,14 @@ Whenever possible, avoid superfluous parent elements when writing HTML. Many tim
 
 <!-- Better -->
 <img class="avatar" src="...">
+
 ```
 
 ### Tables
 Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attribute) when appropriate.
 
 ```html
+
 <table summary="This is a chart of invoices for 2011.">
   <thead>
     <tr>
@@ -51,6 +54,7 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
     </tr>
   </tfoot>
 </table>
+
 ```
 
 ##CSS
@@ -65,6 +69,7 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
 - Each declaration should appear on its own line for more accurate error reporting.
 
 ```css
+
 .example__one,
 .example__two p {
   font-size: 18px;
@@ -74,6 +79,7 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
 .example__three{
   font-family: sans-serif;
 }
+
 ```
 
 ###Formatting
@@ -93,6 +99,7 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
 ###Examples
 
 ```css
+
 // Example of good basic formatting practices
 .style_guide__example {
   color: #000;
@@ -114,6 +121,7 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
 .good--modifier {
   margin-bottom: 20px;
 }
+
 ```
 
 ##File organisation
@@ -123,6 +131,7 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
   - This is not required, you can have all of your `html` files in the Project root and simply name them differently
 
 ```
+
 Project root
 ├─ index.html
 ├─ css
@@ -143,4 +152,5 @@ Project root
 |     └─ index.html
 └─ References
    └─ index.html
+
 ```
