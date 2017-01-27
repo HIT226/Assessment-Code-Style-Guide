@@ -2,7 +2,7 @@
 
 Following this list of code practices and guidelines will be assessable as part of assignment 1a and 1b.
 
-These guidelines are mostly based upon [GitHub's code guidelines](http://primercss.io/guidelines/). You don't have to agree with all of these, but for assignment 1a and 1b, you **will be marked** on your *ability to follow them*.
+These guidelines are mostly a derivative of [GitHub's code guidelines](http://primercss.io/guidelines/). You don't have to agree with all of these, but for assignment 1a and 1b, you **will be marked** on your *ability to follow them*.
 
 ## HTML
 
