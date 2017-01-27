@@ -78,7 +78,7 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
 
 ###Formatting
 
-- Avoid specifying units for zero values, e.g., `margin: 0`; instead of `margin: 0px`;
+- Avoid specifying units for zero values, e.g., `margin: 0;` instead of `margin: 0px;`
 - Strive to limit use of shorthand declarations to instances where you must explicitly set all the available values.
 
 ###Selectors
