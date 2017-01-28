@@ -147,7 +147,7 @@ Project root
    └─ index.html
 ```
 
-## Libraries and plugins
+## Libraries, frameworks, and plugins
 
 You may find that a library, plugin, or framework you wish to use has class naming conventions or markup standards which does not adhere to this guide, that is fine.
 
