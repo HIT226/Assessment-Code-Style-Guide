@@ -87,6 +87,8 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
   - Classes grouped into Blocks eg: `.nav`
   - Individual items defined as elements eg: `.nav__link`
   - and optionally assigned modifiers eg: `.nav__link--current`
+  - Selectors for each group of classes should live in their own file inside `css/lib` and be added to `main.css` via an `@import`
+    - i.e.: all `.nav` styles live in `css/lib/nav.css`
 - Spaces in class names should be replaced with a single underscore `_` eg: `.example_block`
 - As a rule of thumb, avoid unnecessary long selectors. At most, aim for three levels. If you cannot help it, step back and rethink your overall strategy (either the specificity needed, or the layout of the nesting).
 
@@ -144,3 +146,11 @@ Project root
 └─ References
    └─ index.html
 ```
+
+## Libraries and plugins
+
+You may find that a library, plugin, or framework you wish to use has class naming conventions or markup standards which does not adhere to this guide, that is fine.
+
+Style sheets inside of `css/vendor` are assumed to be external libraries or frameworks and will not be held to these standards
+
+Markup tied to frameworks, libraries, or JS plugins will not be penalised for differing from these standards. For example CSS Start Grid does not follow the class naming convention covered here.
