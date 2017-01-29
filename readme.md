@@ -86,16 +86,12 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
 ### Selectors
 
 - Use BEM style class names
-
   - Classes grouped into Blocks eg: `.nav`
   - Individual items defined as elements eg: `.nav__link`
   - and optionally assigned modifiers eg: `.nav__link--current`
   - Selectors for each group of classes should live in their own file inside `css/lib` and be added to `main.css` via an `@import`
-
     - i.e.: all `.nav` styles live in `css/lib/nav.css`
-
 - Spaces in class names should be replaced with a single underscore `_` eg: `.example_block`
-
 - As a rule of thumb, avoid unnecessary long selectors. At most, aim for three levels. If you cannot help it, step back and rethink your overall strategy (either the specificity needed, or the layout of the nesting).
 
 ### Examples
@@ -128,7 +124,6 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
 
 - Group related files into folders.
 - Folders plus additional `index.html` files may be used to create friendly URLs
-
   - This is not required, you can have all of your `html` files in the Project root and simply name them differently
 
 ```
@@ -173,7 +168,5 @@ In atom-beautify's settings, scroll to, and expand, the section on css. Change t
 
 - Beautify on save (enable, optional)
 - Indent size, change to `2`
-
   - By default atom-beautify uses spaces, you can change to tabs if you prefer by deleting the space inside the `indent char` field and then `copy+paste` a `tab` from another document
-
 - Selector separator newline (enable)
