@@ -6,13 +6,18 @@ These guidelines are mostly a derivative of [GitHub's code guidelines](http://pr
 
 ## HTML
 
+- Use the HTML5 doctype `<!doctype html>`
+  - This should be the first line of each html file
+- Attempt to use HTML5 structural elements when appropriate
+- Only images that are part of the site's content should be included in your markup
+  - Other images should be CSS background images
 - Paragraphs of text should be placed inside `<p>` tags, never use multiple `<br>` tags.
 - Items in list form should always be in `<ul>`, `<ol>`, or `<dl>`. Never use a set of `<div>` or `<p>`.
 - Every form input that has text attached should utilize a `<label>` tag. Especially **radio or checkbox elements.**
 - Even though quotes around attributes is optional, always put quotes around attributes for readability.
 - Avoid trailing slashes in self-closing elements. For example, `<br>`, `<hr>`,`<img>`, and `<input>`
-
-  - i.e.: Don't do this: `<br />` or `<hr />`
+  - i.e.: Avoid this: `<br />` or `<hr />`
+- HTML should validate, online HTML validation is available from the [W3C Markup Validation Service](https://validator.w3.org/)
 
 ### Lean markup
 
@@ -56,6 +61,11 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
 ```
 
 ## CSS
+
+- Link to a single CSS file from within your **HTML**
+  - Additional CSS files should be included via `@import` rules from this CSS file
+- No inline CSS on elements ~~`<p style="color: red">...</p>`~~
+- Do not use `<style>` tags, all styles should be external and included via a single `<link>` tag in the head of the page
 
 ### Spacing
 
