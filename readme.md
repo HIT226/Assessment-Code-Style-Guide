@@ -127,6 +127,7 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
 ```
 Project root
 ├─ index.html
+├─ contact.html
 ├─ css
 |  ├─ main.css
 |  ├─ lib
@@ -143,7 +144,7 @@ Project root
 |  ├─ index.html
 |  └─ history
 |     └─ index.html
-└─ References
+└─ references
    └─ index.html
 ```
 
