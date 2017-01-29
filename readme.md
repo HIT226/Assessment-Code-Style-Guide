@@ -131,11 +131,21 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
 }
 ```
 
+## JavaScript
+
+- JavaScript should be unobtrusive
+  - Your site shouldn't be reliant on the use of JavaScript to function
+  - JavaScript should genuinely **enhance** your site
+  - All JavaScript should be within `.js` files, linked to your html via the `src` attribute on `<script>` tags
+- Attempt to use feature detection to fail gracefully where possible
+- Attempt to break scripts into smaller reusable functions which handle key tasks with useful names
+- Attempt to pollyfill functionality on older browsers if it is crucial to the use of your site
+
 ## File organisation
 
 - Group related files into folders.
 - Folders plus additional `index.html` files may be used to create friendly URLs
-  - This is not required, you can have all of your `html` files in the Project root and simply name them differently
+  - This is not required, you can have all of your `.html` files in the Project root and simply name them differently
 
 ```
 Project root
