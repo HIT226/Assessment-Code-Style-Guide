@@ -148,14 +148,14 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
   - Do not include logic between function declarations
 
 ```html
-// DO NOT do this
-<button onclick="functionName();">Wrong</button>
-
 // Linking to an external JavaScript file
 <script src="js/main.js"></script>
 
 // Optionally include the type attribute
 <script src="js/main.js" type="text/javascript"></script>
+
+// DO NOT do this
+<button onclick="functionName();">Wrong</button>
 ```
 
 ```javascript
@@ -165,15 +165,15 @@ if(!Element.prototype.addEventListener){
 }
 
 // Function declarations at the bottom of the file
-function doSomething(){
-  // logic here
+function getSomething(){
+  return "something";
 }
 
 // DO NOT do this, example of logic between function declarations
 var lists = document.querySelectorAll('ul');
 
-function doSomethingElse(){
-  // logic here
+function getSomethingElse(){
+  return "something else";
  }
 ```
 
