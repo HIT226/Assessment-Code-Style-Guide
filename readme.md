@@ -65,7 +65,7 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
 - Link to a single CSS file from within your **HTML**
   - Additional CSS files should be included via `@import` rules from this CSS file
 - No inline CSS on elements ~~`<p style="color: red">...</p>`~~
-- Do not use `<style>` tags, all styles should be external and included via a single `<link>` tag in the head of the page
+- Do not use `<style>` tags, all styles should be external and included via a single `<link>` tag in the `<head>` of each page
 
 ### Spacing
 
