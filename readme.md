@@ -133,19 +133,48 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
 
 ## JavaScript
 
+- Do not use attribute based event handlers
+  - There should be no JavaScript code in your HTML files
 - JavaScript should be unobtrusive
   - Your site shouldn't be reliant on the use of JavaScript to function
   - JavaScript should genuinely **enhance** your site
   - All JavaScript should be within `.js` files, linked to your html via the `src` attribute on `<script>` tags
+  - Including `type="text/javascript"` on `<script>` when linking to a JavaScript file is optional as browsers default to `text/javascript`. Including it only increases bloat and reduces code readability.
 - Attempt to use feature detection to fail gracefully where possible
 - Attempt to break scripts into smaller reusable functions which handle key tasks with useful names
 - Attempt to pollyfill functionality on older browsers if it is crucial to the use of your site
+- Place functions declarations at the bottom of your `.js` file and logic at the top
+  - This aids readability
+  - Do not include logic between function declarations
+
+```html
+// DO NOT do this
+<button onclick="functionName();">Wrong</button>
+
+// Linking to an external JavaScript file
+<script src="js/main.js"></script>
+
+// Optionally include the type attribute
+<script src="js/main.js" type="text/javascript"></script>
+```
 
 ```javascript
-// Example feature detection
+// Example feature detection (logic)
 if(!Element.prototype.addEventListener){
   node.addEventListener(...);
 }
+
+// Function declarations at the bottom of the file
+function doSomething(){
+  // logic here
+}
+
+// DO NOT do this, example of logic between function declarations
+var lists = document.querySelectorAll('ul');
+
+function doSomethingElse(){
+  // logic here
+ }
 ```
 
 ## Pollyfills
