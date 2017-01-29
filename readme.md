@@ -141,6 +141,13 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
 - Attempt to break scripts into smaller reusable functions which handle key tasks with useful names
 - Attempt to pollyfill functionality on older browsers if it is crucial to the use of your site
 
+```javascript
+// Example feature detection
+if(!Element.prototype.addEventListener){
+  node.addEventListener(...);
+}
+```
+
 ## Pollyfills
 
 - Include [html5shiv](https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.js) - allows HTML5 doctype and elements to work in old versions of IE
