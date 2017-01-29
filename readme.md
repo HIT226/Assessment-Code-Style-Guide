@@ -155,3 +155,16 @@ You may find that a library, plugin, or framework you wish to use has class nami
 Style sheets inside of `css/vendor` are assumed to be external libraries or frameworks and will not be held to these standards
 
 Markup tied to frameworks, libraries, or JS plugins will not be penalised for differing from these standards. For example CSS Start Grid does not follow the class naming convention covered here.
+
+## Code Beutifiers
+
+If you're using [Atom](https://atom.io/), try the [atom-beautify](https://atom.io/packages/atom-beautify) package. You can change it's settings to run on save and it will automate *most* of the css guidelines in this document.
+
+### Settings to change
+
+In atom-beautify's settings, scroll to, and expand, the section on css. Change the following settings:
+
+- Beautify on save (enable, optional)
+- Indent size, change to `2`
+  - By default atom-beautify uses spaces, you can change to tabs if you prefer by deleting the space inside the `indent char` field and then `copy+paste` a `tab` from another document
+- Selector separator newline (enable)
