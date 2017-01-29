@@ -95,6 +95,7 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
 
 ### Selectors
 
+- Avoid using `ID` selectors
 - Use BEM style class names
   - Classes grouped into Blocks eg: `.nav`
   - Individual items defined as elements eg: `.nav__link`
