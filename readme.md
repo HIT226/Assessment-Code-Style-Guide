@@ -2,7 +2,7 @@
 
 Following this list of code practices and guidelines will be assessable as part of assignment 1a and 1b.
 
-These guidelines are mostly a derivative of [GitHub's code guidelines](http://primercss.io/guidelines/). In most professional workplaces, there are coding standards and the following is the standard for assignment 1a and 1b, you **will be marked** on your *ability to follow them* and demonstrate a professional practice skill.
+These guidelines are mostly a derivative of [GitHub's code guidelines](http://primercss.io/guidelines/). In most professional workplaces, there are coding standards and the following is the standard for assignment 1a and 1b, you **will be marked** on your _ability to follow them_ and demonstrate a professional practice skill.
 
 ## HTML
 
@@ -10,7 +10,8 @@ These guidelines are mostly a derivative of [GitHub's code guidelines](http://pr
 - Items in list form should always be in `<ul>`, `<ol>`, or `<dl>`. Never use a set of `<div>` or `<p>`.
 - Every form input that has text attached should utilize a `<label>` tag. Especially **radio or checkbox elements.**
 - Even though quotes around attributes is optional, always put quotes around attributes for readability.
-- Avoid trailing slashes in self-closing elements. For example, `<br>`, `<hr>`,` <img>`, and `<input>`
+- Avoid trailing slashes in self-closing elements. For example, `<br>`, `<hr>`,`<img>`, and `<input>`
+
   - i.e.: Don't do this: `<br />` or `<hr />`
 
 ### Lean markup
@@ -28,6 +29,7 @@ Whenever possible, avoid superfluous parent elements when writing HTML. Many tim
 ```
 
 ### Tables
+
 Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attribute) when appropriate.
 
 ```html
@@ -71,7 +73,7 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
   line-height: 1.3;
 }
 
-.example__three{
+.example__three {
   font-family: sans-serif;
 }
 ```
@@ -84,12 +86,16 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
 ### Selectors
 
 - Use BEM style class names
+
   - Classes grouped into Blocks eg: `.nav`
   - Individual items defined as elements eg: `.nav__link`
   - and optionally assigned modifiers eg: `.nav__link--current`
   - Selectors for each group of classes should live in their own file inside `css/lib` and be added to `main.css` via an `@import`
+
     - i.e.: all `.nav` styles live in `css/lib/nav.css`
+
 - Spaces in class names should be replaced with a single underscore `_` eg: `.example_block`
+
 - As a rule of thumb, avoid unnecessary long selectors. At most, aim for three levels. If you cannot help it, step back and rethink your overall strategy (either the specificity needed, or the layout of the nesting).
 
 ### Examples
@@ -122,6 +128,7 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
 
 - Group related files into folders.
 - Folders plus additional `index.html` files may be used to create friendly URLs
+
   - This is not required, you can have all of your `html` files in the Project root and simply name them differently
 
 ```
@@ -156,9 +163,9 @@ Style sheets inside of `css/vendor` are assumed to be external libraries or fram
 
 Markup tied to frameworks, libraries, or JS plugins will not be penalised for differing from these standards. For example CSS Start Grid does not follow the class naming convention covered here.
 
-## Code Beutifiers
+## Code Beautifiers
 
-If you're using [Atom](https://atom.io/), try the [atom-beautify](https://atom.io/packages/atom-beautify) package. You can change it's settings to run on save and it will automate *most* of the css guidelines in this document.
+If you're using [Atom](https://atom.io/), try the [atom-beautify](https://atom.io/packages/atom-beautify) package. You can change it's settings to run on save and it will automate _most_ of the css guidelines in this document.
 
 ### Settings to change
 
@@ -166,5 +173,7 @@ In atom-beautify's settings, scroll to, and expand, the section on css. Change t
 
 - Beautify on save (enable, optional)
 - Indent size, change to `2`
+
   - By default atom-beautify uses spaces, you can change to tabs if you prefer by deleting the space inside the `indent char` field and then `copy+paste` a `tab` from another document
+
 - Selector separator newline (enable)
