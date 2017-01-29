@@ -141,6 +141,14 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
 - Attempt to break scripts into smaller reusable functions which handle key tasks with useful names
 - Attempt to pollyfill functionality on older browsers if it is crucial to the use of your site
 
+## Pollyfills
+
+- Include [html5shiv](https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.js) - allows HTML5 doctype and elements to work in old versions of IE
+  - Directions available on their [GitHub Project](https://github.com/aFarkas/html5shiv)
+  - If you're using [Modernizr](https://modernizr.com/), you can choose to add it to your build from the [Modernizr build tool](https://modernizr.com/download) the [Development Build](https://modernizr.com/download?do_not_use_in_production) includes it by default
+- Include [respond.js](https://github.com/scottjehl/Respond/blob/master/dest/respond.min.js) - adds media query support to old browsers
+  - Directions available on their [GitHub Project](https://github.com/scottjehl/Respond)
+
 ## File organisation
 
 - Group related files into folders.
