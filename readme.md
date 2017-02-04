@@ -124,10 +124,16 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
 
 // Avoid unnecessary shorthand declarations
 .not_so_good {
-  margin: 0 0 20px;
+  background: red;
+  font: italic normal 13px/150% Arial, Helvetica, sans-serif;
 }
 .good--modifier {
-  margin-bottom: 20px;
+  background-color: red;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 150%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 ```
 
