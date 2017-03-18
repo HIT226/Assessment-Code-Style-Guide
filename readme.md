@@ -148,10 +148,10 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
   - Including `type="text/javascript"` on `<script>` when linking to a JavaScript file is optional as browsers default to `text/javascript`. Including it only increases bloat and reduces code readability.
 - Attempt to use feature detection to fail gracefully where possible
 - Attempt to break scripts into smaller reusable functions which handle key tasks with useful names
-- Attempt to pollyfill functionality on older browsers if it is crucial to the use of your site
 - Place functions declarations at the bottom of your `.js` file and logic at the top
   - This aids readability
   - Do not include logic between function declarations
+- **Bonus:** Attempt to pollyfill functionality on older browsers if it is crucial to the use of your site
 
 ```html
 // Linking to an external JavaScript file
@@ -183,7 +183,7 @@ function getSomethingElse(){
  }
 ```
 
-## Pollyfills
+## Bonus: Pollyfills
 
 - Include [html5shiv](https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.js) - allows HTML5 doctype and elements to work in old versions of IE
   - Directions available on their [GitHub Project](https://github.com/aFarkas/html5shiv)
@@ -227,7 +227,7 @@ You may find that a library, plugin, or framework you wish to use has class nami
 
 Style sheets inside of `css/vendor` are assumed to be external libraries or frameworks and will not be held to these standards
 
-Markup tied to frameworks, libraries, or JS plugins will not be penalised for differing from these standards. For example CSS Start Grid does not follow the class naming convention covered here.
+Markup tied to frameworks, libraries, or JS plugins will not be penalised for differing from these standards. For example CSS Smart Grid does not follow the class naming convention covered here.
 
 ## Code Beautifiers
 
