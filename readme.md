@@ -1,6 +1,6 @@
 # Code Guidelines
 
-Following this list of code practices and guidelines will be assessable as part of assignment 1a and 1b.
+You will be expected to follow this list of code practices and guidelines in your assessments for this unit.
 
 These guidelines are mostly a derivative of [GitHub's code guidelines](http://primercss.io/guidelines/). In most professional workplaces, there are coding standards and the following is the standard for assignment 1a and 1b, you **will be marked** on your _ability to follow them_ and demonstrate a professional practice skill.
 
@@ -194,8 +194,7 @@ function getSomethingElse(){
 ## File organisation
 
 - Group related files into folders.
-- Folders plus additional `index.html` files may be used to create friendly URLs
-  - This is not required, you can have all of your `.html` files in the Project root and simply name them differently
+- HTML files may be stored in the project root.
 
 ```
 Project root
@@ -213,13 +212,14 @@ Project root
 |     └─ modernizr.js
 ├─ images
 |  └─ sample.jpg
-├─ about
-|  ├─ index.html
-|  └─ history
-|     └─ index.html
-└─ references
-   └─ index.html
 ```
+
+- File and folder names should contain only lower-case letters, digits and hyphens. They should not contain any spaces, punctuation or special characters as they are processed differently in URLs
+	- `myimage5.png` is ok
+	- `my-image.png` is ok
+	- `myImage.png` is not ok
+	- `my image.png` is not ok
+	- `image😀.png` is not o 😥
 
 ## Libraries, frameworks, and plugins
 
