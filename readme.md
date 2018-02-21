@@ -219,7 +219,7 @@ Project root
 	- `my-image.png` is ok
 	- `myImage.png` is not ok
 	- `my image.png` is not ok
-	- `image😀.png` is not o 😥
+	- `image😀.png` is not ok 😥
 
 ## Libraries, frameworks, and plugins
 
