@@ -18,6 +18,7 @@ These guidelines are mostly a derivative of [GitHub's code guidelines](http://pr
 - Avoid trailing slashes in self-closing elements. For example, `<br>`, `<hr>`,`<img>`, and `<input>`
   - i.e.: Avoid this: `<br />` or `<hr />`
 - HTML should validate, online HTML validation is available from the [W3C Markup Validation Service](https://validator.w3.org/)
+- Make sure your site is accessible and highly usable, make use of ARIA attributes
 
 ### Lean markup
 
@@ -66,6 +67,10 @@ Make use of `<thead>`, `<tfoot>`, `<tbody>`, and `<th>` tags (and `scope` attrib
   - Additional CSS files should be included via `@import` rules from this CSS file
 - No inline CSS on elements ~~`<p style="color: red">...</p>`~~
 - Do not use `<style>` tags, all styles should be external and included via a single `<link>` tag in the `<head>` of each page
+- Use @media queries to help your site adjust to multiple display sizes and resolutions
+- Make your CSS mobile first. Use min-width instead of max-width media queries where possible
+- Use an accessible defined colour scheme
+
 
 ### Spacing
 
